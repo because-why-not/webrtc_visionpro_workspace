@@ -1,0 +1,4 @@
+[submodule "src"]
+	path = src
+	url = https://github.com/because-why-not/webrtc_visionpro.git
+	branch = xros_only
