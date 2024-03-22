@@ -1,7 +1,13 @@
-if [ -z "$DEPOT_TOOLS" ]; then
-    DEPOT_TOOLS=`realpath ./depot_tools`
+if [ -z "$_ENV_ME_ONCE" ]; then
+    export _ENV_ME_ONCE=1
+    if [ -z "$DEPOT_TOOLS" ]; then
+        export DEPOT_TOOLS=`realpath ./depot_tools`
+    fi
+    echo "Using depot tools form ${DEPOT_TOOLS}"
+    if [ -z "$XCODE_PATH" ]; then
+        export XCODE_PATH="/Applications/Xcode.app"
+    fi
+    echo "Using xcode form ${XCODE_PATH}"
+    PATH=${DEPOT_TOOLS}:$PATH
+
 fi
-if [ -z "$XCODE_PATH" ]; then
-    XCODE_PATH="/Applications/Xcode.app"
-fi
-PATH=${DEPOT_TOOLS}:$PATH
