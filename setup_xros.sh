@@ -1,9 +1,20 @@
 set -e
-
+gclient root
+gclient config --spec 'solutions = [
+  {
+    "name": "src",
+    "url": "https://webrtc.googlesource.com/src.git",
+    "deps_file": "DEPS",
+    "managed": False,
+    "custom_deps": {},
+  },
+]
+target_os = ["ios", "mac"]
+'
 
 ownpath="$(dirname $0)/src"
 pushd ${ownpath}
-#gclient sync
+gclient sync
 
 gn gen out/simxros-arm64-debug   --args='
   target_os="ios"
