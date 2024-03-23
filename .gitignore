@@ -1,3 +1,4 @@
 .gclient*
 .cipd
 .githash
+.DS_Store
