@@ -1,4 +1,5 @@
 .gclient*
 .cipd
 .githash
-.DS_Store
+**/.DS_Stores
+test

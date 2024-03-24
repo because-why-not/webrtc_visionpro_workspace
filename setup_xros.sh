@@ -24,7 +24,7 @@ gn gen out/simxros-arm64-debug   --args='
   ios_sdk_override="'${XCODE_PATH}'/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator.sdk"
   target_cpu="arm64" 
   clang_base_path="'${XCODE_PATH}'/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/"
-  is_component_build=false
+  is_component_build=false rtc_enable_objc_symbol_export=true 
   is_debug=true ios_enable_code_signing=false use_custom_libcxx=false enable_dsyms=true  rtc_include_tests=false clang_use_chrome_plugins = false use_lld=false ' --ide=xcode
 
 gn gen out/xros-arm64-debug   --args='
@@ -34,7 +34,7 @@ gn gen out/xros-arm64-debug   --args='
   ios_sdk_override="'${XCODE_PATH}'/Contents/Developer/Platforms/XROS.platform/Developer/SDKs/XROS1.0.sdk"
   target_cpu="arm64" 
   clang_base_path="'${XCODE_PATH}'/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/"
-  is_component_build=false
+  is_component_build=false rtc_enable_objc_symbol_export=true 
   is_debug=true ios_enable_code_signing=false use_custom_libcxx=false enable_dsyms=true  rtc_include_tests=false clang_use_chrome_plugins = false use_lld=false ' --ide=xcode
 
 popd
