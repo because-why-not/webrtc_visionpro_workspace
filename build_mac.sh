@@ -4,8 +4,8 @@ source ./env.sh
 ./sync.sh
 ownpath="$(dirname $0)/src"
 pushd ${ownpath}
-ninja -C out/mac-x64-debug webrtc
-ninja -C out/mac-x64-release webrtc
+#ninja -C out/mac-x64-debug webrtc
+#ninja -C out/mac-x64-release webrtc
 ninja -C out/mac-arm64-debug webrtc
 ninja -C out/mac-arm64-release webrtc
 ninja -C out/ios-arm64-debug webrtc
