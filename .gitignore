@@ -4,6 +4,5 @@
 **/.DS_Store
 test
 webrtc.xcframework
-webrtc_release.xcframework
-webrtc_debug.xcframework
-MinTestApp/xcuserdata
+webrtc_release.xcframework*
+webrtc_debug.xcframework*
