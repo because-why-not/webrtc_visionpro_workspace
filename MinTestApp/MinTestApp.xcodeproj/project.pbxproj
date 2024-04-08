@@ -36,7 +36,6 @@
 		5980DFBD2BAFD39100BA8873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5980DFBF2BAFD39100BA8873 /* MinTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinTestApp.entitlements; sourceTree = "<group>"; };
 		5980DFC12BAFD39100BA8873 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5980E0222BB019D100BA8873 /* testframework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = testframework.xcframework; path = ../testframework.xcframework; sourceTree = "<group>"; };
 		598FAFFE2BB032610056D250 /* webrtc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webrtc.xcframework; path = ../webrtc.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				598FAFFE2BB032610056D250 /* webrtc.xcframework */,
-				5980E0222BB019D100BA8873 /* testframework.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
