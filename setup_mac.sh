@@ -1,4 +1,4 @@
-set -e
+#!/bin/bash -e
 source ./env.sh
 gclient root
 gclient config --spec 'solutions = [

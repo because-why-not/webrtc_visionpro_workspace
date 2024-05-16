@@ -1,6 +1,5 @@
-
+#!/bin/bash -e
 HASH_FILE=.githash
-set -e
 source ./env.sh
 
 sync_and_exit() {

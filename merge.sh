@@ -1,4 +1,5 @@
-set -e
+#!/bin/bash -eu
+
 #we create a link to either the debug or release build in the end which
 #is used by the test project
 #set to debug or release to pick which one is used
@@ -36,3 +37,4 @@ done
 
 
 ln -s webrtc_${USE_CONFIG}.xcframework webrtc.xcframework
+

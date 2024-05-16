@@ -6,3 +6,4 @@ test
 webrtc.xcframework
 webrtc_release.xcframework*
 webrtc_debug.xcframework*
+out

@@ -1,3 +1,4 @@
+#!/bin/bash -e
 ./setup_mac.sh
 ./setup_xros.sh
 ./build_mac.sh
